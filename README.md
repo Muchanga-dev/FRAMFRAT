@@ -13,7 +13,7 @@ Para utilizar o FramFrat em seus projetos de análise de fraturas, siga os passo
 
 ### Configuração do Ambiente
 
-**Obtenha o FRAMFRAT**: Clone o repositório do FramFrat para sua estação de trabalho ou faça o download dos arquivos do projeto.
+**Obtenha o FRAMFRAT**: Clone o repositório do FRAMFRAT para sua estação de trabalho ou faça o download dos arquivos do projeto.
 
    `git clone https://github.com/Muchanga-dev/FRAMFRAT.git`
    
@@ -31,16 +31,16 @@ Com o ambiente configurado, o FramFrat está pronto para ser iniciado:
 Este comando inicia a aplicação web localmente, abrindo automaticamente a interface do usuário do FramFrat no seu navegador padrão. Você está agora pronto(a) para carregar imagens de materiais rochosos e começar a análise.
 
 ### Características Principais
-O FramFrat oferece uma ampla gama de funcionalidades, projetadas para facilitar a análise e a caracterização de fraturas em materiais rochosos:
+O FRAMFRAT oferece uma ampla gama de funcionalidades, projetadas para facilitar a análise e a caracterização de fraturas em materiais rochosos:
 
 - **Upload e Captura de Imagem:** Suporte a upload de imagens ou captura direta via câmera.
 - **Preparação da Imagem:** Ferramentas para rotação e recorte, otimizando a imagem para análise.
 - **Análise Detalhada:** Identificação das fraturas, análise da dimensão fractal e caracterização detalhada das propriedades das fraturas.
 - **Visualização e Relatórios:** Exibição gráfica dos resultados.
 
-### Contribuindo com o FramFrat
-Contribuições são essenciais para o desenvolvimento contínuo do FramFrat. Se você deseja contribuir, faça um fork do repositório, aplique suas mudanças e abra um pull request para revisão.
+### Contribuindo com o FRAMFRAT
+Contribuições são essenciais para o desenvolvimento contínuo do FRANFRAT. Se você deseja contribuir, faça um fork do repositório, aplique suas mudanças e abra um pull request para revisão.
 
 ### Licença
-O FramFrat é disponibilizado sob a Licença [Apache 2.0](https://github.com/Muchanga-dev/FRAMFRAT/blob/main/LICENSE.txt), oferecendo flexibilidade para uso pessoal e comercial, garantindo ao mesmo tempo a proteção dos direitos autorais. Consulte o arquivo LICENSE para obter detalhes completos.
+O FRAMFRAT é disponibilizado sob a Licença [Apache 2.0](https://github.com/Muchanga-dev/FRAMFRAT/blob/main/LICENSE.txt), oferecendo flexibilidade para uso pessoal e comercial, garantindo ao mesmo tempo a proteção dos direitos autorais. Consulte o arquivo LICENSE para obter detalhes completos.
 
