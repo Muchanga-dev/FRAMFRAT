@@ -42,5 +42,5 @@ O FramFrat oferece uma ampla gama de funcionalidades, projetadas para facilitar 
 Contribuições são essenciais para o desenvolvimento contínuo do FramFrat. Se você deseja contribuir, faça um fork do repositório, aplique suas mudanças e abra um pull request para revisão.
 
 ### Licença
-O FramFrat é disponibilizado sob a Licença Apache 2.0, oferecendo flexibilidade para uso pessoal e comercial, garantindo ao mesmo tempo a proteção dos direitos autorais. Consulte o arquivo LICENSE para obter detalhes completos.
+O FramFrat é disponibilizado sob a Licença [Apache 2.0](https://github.com/Muchanga-dev/FRAMFRAT/blob/main/LICENSE.txt), oferecendo flexibilidade para uso pessoal e comercial, garantindo ao mesmo tempo a proteção dos direitos autorais. Consulte o arquivo LICENSE para obter detalhes completos.
 
