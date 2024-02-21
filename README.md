@@ -1,8 +1,8 @@
-# FramFat: Ferramenta de Análise de Fraturas em Materiais Rochosos
+# FRAMFRAT: Ferramenta de Análise de Fraturas em Materiais Rochosos
 
 FramFrat é uma solução inovadora projetada para a análise detalhada de fraturas em materiais rochosos. Utilizando técnicas avançadas de processamento de imagens e análise fractal, este software é capaz de fornecer uma compreensão profunda das características das fraturas, facilitando estudos geológicos e de engenharia de materiais.
 
-## Começando com o FramFrat
+## Começando com o FRAMFRAT
 
 Para utilizar o FramFrat em seus projetos de análise de fraturas, siga os passos abaixo para configurar o ambiente e executar o aplicativo.
 
@@ -26,7 +26,7 @@ Este comando garante a instalação de todas as bibliotecas necessárias para o 
 ### Executando o FramFrat
 Com o ambiente configurado, o FramFrat está pronto para ser iniciado:
 
-`streamlit run app.py`
+`Python run.py`
    
 Este comando inicia a aplicação web localmente, abrindo automaticamente a interface do usuário do FramFrat no seu navegador padrão. Você está agora pronto(a) para carregar imagens de materiais rochosos e começar a análise.
 
