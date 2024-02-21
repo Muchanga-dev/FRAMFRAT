@@ -1,6 +1,6 @@
 # FRAMFRAT: Ferramenta de Detecção e Análise de Fraturas em Materiais Rochosos por Processamento de Imagem Digital
 
-FramFrat é uma solução inovadora projetada para a análise detalhada de fraturas em materiais rochosos. Utilizando técnicas avançadas de processamento de imagens e análise fractal, este software é capaz de fornecer uma compreensão profunda das características das fraturas, facilitando estudos geológicos e de engenharia de materiais.
+FRAMFRAT é uma solução inovadora projetada para a análise detalhada de fraturas em materiais rochosos. Utilizando técnicas avançadas de processamento de imagens e análise fractal, este software é capaz de fornecer uma compreensão profunda das características das fraturas, facilitando estudos geológicos e de engenharia de materiais.
 
 ## Começando com o FRAMFRAT
 
