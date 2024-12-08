@@ -1,55 +1,121 @@
 # FRAMFRAT: Ferramenta de Detecção e Análise de Fraturas em Materiais Rochosos por Processamento de Imagem Digital
 
-FRAMFRAT é uma solução inovadora projetada para a análise detalhada de fraturas em materiais rochosos. Utilizando técnicas avançadas de processamento de imagens e análise fractal, este software é capaz de fornecer uma compreensão profunda das características das fraturas, facilitando estudos geológicos e de engenharia de materiais.
+FRAMFRAT é uma ferramenta avançada para detecção e caracterização de fraturas em materiais geológicos utilizando processamento de imagens digitais. Desenvolvida em Python, a ferramenta permite que usurio carreguem imagens, apliquem ajustes de pré-processamento e realizem análises geométricas detalhadas de fraturas. A ferramenta fornece recursos avançados para visualização interativa e exportação de resultados, facilitando estudos geológicos e de engenharia de materiais.
 
-## Começando com o FRAMFRAT
+## Destaques
 
-Para utilizar o FRAMFRAT em seus projetos de análise de fraturas, siga os passos abaixo para configurar o ambiente e executar o aplicativo.
+- **Detecção Automática:** Identificação e esqueleto das fraturas em imagens digitais.
+- **Análise Geométrica Avançada:** Cálculo de abertura, comprimento, porosidade, conectividade e permeabilidade.
+- **Dimensão Fractal:** Ferramenta integrada para determinar a complexidade fractal das fraturas.
+- **Visualização Interativa:** Diagramas de orientação, estereogramas e gráficos estatísticos.
+- **Exportação de Dados:** Resultados prontos para análise em formatos como CSV e Excel.
 
-### Requisitos
+## Pré-Requisitos
 
-- Python 3.11 ou superior
-- Pip (gerenciador de pacotes do Python)
+Certifique-se de que Python 3.10 ou superior esteja instalado. Para verificar, execute:
 
-### Configuração do Ambiente
+```bash
+python3 --version
+```
 
-**Obtenha o FRAMFRAT**: Clone o repositório do FRAMFRAT para sua estação de trabalho ou faça o download dos arquivos do projeto.
+Caso não esteja instalado, faça o download em [python.org](https://www.python.org/).
 
-   `git clone https://github.com/Muchanga-dev/FRAMFRAT.git`
-   
-Instale as Dependências: Abra um terminal no diretório do projeto e execute:
+## Instalação
 
- `pip install -r requirements.txt`
- 
-Este comando garante a instalação de todas as bibliotecas necessárias para o funcionamento do FRAMFRAT.
+### 1. Clone o Repositório
 
-### Executando o FRAMFRAT
-Com o ambiente configurado, o FRAMFRAT está pronto para ser iniciado:
+```bash
+git clone https://github.com/Muchanga-dev/FRAMFRAT.git
+cd FRAMFRAT
+```
 
-`Python run.py`
-   
-Este comando inicia a aplicação web localmente, abrindo automaticamente a interface do usuário do FRAMFRAT no seu navegador padrão (localhost:8501). Você está agora pronto(a) para carregar imagens de materiais rochosos com fraturas e começar a análise.
+### 2. Crie e Ative um Ambiente Virtual (Recomendado)
 
-### Características Principais
-O FRAMFRAT oferece uma ampla gama de funcionalidades, projetadas para facilitar a análise e a caracterização de fraturas em materiais rochosos:
+```bash
+python3 -m venv venv
+source venv/bin/activate  # No Windows, use venv\Scripts\activate
+```
 
-- **Upload e Captura de Imagem:** Suporte a upload de imagens ou captura direta via câmera.
-- **Preparação da Imagem:** Ferramentas para rotação e recorte, otimizando a imagem para análise.
-- **Análise Detalhada:** Identificação das fraturas, análise da dimensão fractal e caracterização detalhada das propriedades das fraturas.
-- **Visualização e Relatórios:** Exibição gráfica dos resultados.
+### 3. Instale as Dependências
 
-### Importância da Qualidade da Imagem
-Para garantir a melhor experiência e resultados precisos na detecção e análise de fraturas, é crucial que a imagem utilizada apresente boa qualidade. Isso significa que a imagem deve ter:
+```bash
+pip install -r requirements.txt
+```
 
-- **Resolução adequada:** Alta resolução (acima de 1 megapixel) permite a identificação precisa de detalhes das fraturas.
-- **Foco nítido:** A imagem deve estar em foco para garantir a detecção precisa das aberturas das fraturas.
-- **Iluminação uniforme:** Iluminação adequada e uniforme evita sombras e reflexos que podem dificultar a detecção.
-- **Contraste adequado:** Contraste suficiente entre as fraturas e o material rochoso facilita a segmentação das fraturas.
-Ao seguir estas diretrizes, você garante que o FRAMFRAT possa realizar a análise com o máximo de precisão e fornecer resultados confiáveis para seus estudos.
+## Como Usar
 
-### Contribuindo com o FRAMFRAT
-Contribuições são essenciais para o desenvolvimento contínuo do FRAMFRAT. Se você deseja contribuir, faça um fork do repositório, aplique suas mudanças e abra um pull request para revisão.
+### 1. Execute a Aplicação
 
-### Licença
-O FRAMFRAT é disponibilizado sob a Licença Apache 2.0, oferecendo flexibilidade para uso pessoal e comercial, garantindo ao mesmo tempo a proteção dos direitos autorais. Consulte o arquivo [LICENSE](https://github.com/Muchanga-dev/FRAMFRAT/blob/main/LICENSE.txt) para obter detalhes completos.
+Inicie a aplicação diretamente com o comando:
 
+```bash
+python run.py
+```
+
+### 2. Interface do Usuário
+
+- **Upload de Imagens:** Carregue imagens nos formatos suportados (PNG, JPG).
+- **Pré-Processamento:** Ajuste brilho, contraste, recorte e rotação.
+- **Detecção de Fraturas:** Utilize algoritmos integrados para identificação automática de fraturas.
+- **Caracterização Avançada:** Realize análises geométricas e calcule propriedades específicas.
+- **Visualização e Exportação:** Gere relatórios visuais e salve os resultados em Excel ou CSV.
+
+## Funcionalidades Principais
+
+### Detecção Avançada
+
+- Segmentação automática utilizando thresholding adaptativo.
+- Esqueletização para cálculo de conectividade.
+
+### Análises Estatísticas
+
+- Cálculo da dimensão fractal e intensidade de fraturas.
+- Estatísticas detalhadas de abertura e comprimento.
+
+### Visualizações Interativas
+
+- Gráficos de distribuição e orientação.
+- Estereogramas e diagramas de roseta.
+
+### Exportação Personalizável
+
+- Relatórios prontos para análise externa em formatos populares.
+
+## Resolução de Problemas
+
+### Erros Comuns
+
+#### Carregamento de Arquivos
+
+- Certifique-se de que os formatos de imagem são compatíveis.
+
+#### Dependências
+
+- Verifique se todas as bibliotecas foram instaladas corretamente:
+
+```bash
+pip install -r requirements.txt
+```
+
+## Contribuindo com FRAMFRAT
+
+Contribuições são bem-vindas! Para participar:
+
+1. Faça um fork do repositório.
+2. Crie uma nova branch:
+
+    ```bash
+    git checkout -b feature-minha-melhoria
+    ```
+
+3. Envie suas mudanças e abra um pull request.
+
+## Licença
+
+FRAMFRAT é disponibilizado sob a Licença Apache 2.0. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
+
+## Contato
+
+**Autor:** Armando Muchanga  
+**Instituição:** Universidade Federal de Pernambuco (UFPE)  
+**Email:** [armando.muchanga@ufpe.br](mailto:armando.muchanga@ufpe.br)
