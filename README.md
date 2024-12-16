@@ -127,4 +127,4 @@ FRAMFRAT é disponibilizado sob a Licença Apache 2.0. Consulte o arquivo [LICEN
 - **Prof. Dr. José Antônio Barbosa**
 
 ### Colaboradores
-- **Dr. Osvaldo Correia**
+- **Prof. Dr. Osvaldo Correia**
