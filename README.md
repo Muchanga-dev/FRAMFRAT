@@ -2,6 +2,9 @@
 
 FRAMFRAT é uma ferramenta avançada para detecção e caracterização de fraturas em materiais geológicos utilizando processamento de imagens digitais. Desenvolvida em Python, a ferramenta permite que usurio carreguem imagens, apliquem ajustes de pré-processamento e realizem análises geométricas detalhadas de fraturas. A ferramenta fornece recursos avançados para visualização interativa e exportação de resultados, facilitando estudos geológicos e de engenharia de materiais.
 
+![FRAMFRAT](resultado/image/apresetacao/app_homo.png)
+
+
 ## Destaques
 
 - **Detecção Automática:** Identificação e esqueleto das fraturas em imagens digitais.
@@ -114,8 +117,15 @@ Contribuições são bem-vindas! Para participar:
 
 FRAMFRAT é disponibilizado sob a Licença Apache 2.0. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
 
-## Contato
+# Nome do Projeto
 
-**Autor:** Armando Muchanga  
-**Instituição:** Universidade Federal de Pernambuco (UFPE)  
-**Email:** [armando.muchanga@ufpe.br](mailto:armando.muchanga@ufpe.br)
+## Autor
+**Armando Muchanga**  
+[armando.muchanga@ufpe.br](mailto:armando.muchanga@ufpe.br)
+
+## Orientadores
+- **Prof. Dr. Igor Fernandes Gomes**
+- **Prof. Dr. José Antônio Barbosa**
+
+## Colaboradores
+- **Dr. Osvaldo Correia**
