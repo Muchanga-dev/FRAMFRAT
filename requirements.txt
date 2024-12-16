@@ -1,0 +1,16 @@
+streamlit
+numpy
+pandas
+scikit-image
+scikit-learn
+matplotlib
+plotly
+scipy
+seaborn
+networkx
+Pillow
+opencv-python-headless
+mplstereonet
+streamlit-cropper
+beautifulsoup4
+xlsxwriter
