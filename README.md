@@ -117,15 +117,14 @@ Contribuições são bem-vindas! Para participar:
 
 FRAMFRAT é disponibilizado sob a Licença Apache 2.0. Consulte o arquivo [LICENSE](LICENSE) para mais informações.
 
-# Nome do Projeto
 
-## Autor
+### Autor
 **Armando Muchanga**  
 [armando.muchanga@ufpe.br](mailto:armando.muchanga@ufpe.br)
 
-## Orientadores
+### Orientadores
 - **Prof. Dr. Igor Fernandes Gomes**
 - **Prof. Dr. José Antônio Barbosa**
 
-## Colaboradores
+### Colaboradores
 - **Dr. Osvaldo Correia**
