@@ -86,12 +86,11 @@ def render_detection_page():
             connectivity=True,
             connectivity_alpha=0.4,
             overlay_alpha=0.3,
-            overlay_color=(0, 255, 0)  # Verde para indicar ajustes
+            overlay_color=(0, 255, 0) 
         )
         adjusted_overlay_image = resultados_ajustados.get('overlay_fraturas')
 
     # Exibe a visualização inicial e ajustada lado a lado
-   #st.markdown("### Comparação da Detecção Inicial e Ajustada")
     col1, col2 = st.columns(2)
 
     with col1:

@@ -6,7 +6,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy import stats
 import cv2
-import mplstereonet  # Importando a biblioteca para estereogramas
+import mplstereonet
 import pandas as pd
 
 

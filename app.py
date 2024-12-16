@@ -21,8 +21,8 @@ def main():
     st.session_state.setdefault('analysis_results', None)
     st.session_state.setdefault('skeleton_image', None)
     st.session_state.setdefault('area_total_mm2', None)
-    st.session_state.setdefault('image_angle', 0.0)  # Adicionado campo para ângulo da imagem
-    st.session_state.setdefault('advanced_segmentation', False)  # Adicionado campo para segmentação avançada
+    st.session_state.setdefault('image_angle', 0.0)
+    st.session_state.setdefault('advanced_segmentation', False)
 
     # Verifica se um arquivo foi carregado na página inicial e redireciona para o pré-processamento
     if st.session_state.uploaded_file is not None and st.session_state.page == 'home':

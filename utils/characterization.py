@@ -1,5 +1,3 @@
-# utils/characterization.py
-
 import streamlit as st
 import pandas as pd
 from utils.core import FractureCharacterizer
@@ -144,7 +142,7 @@ def render_characterization_page():
             min_length=min_length,
             min_opening=min_opening,
             image_angle=image_angle,
-            segmentation_enabled=segmentation_enabled  # Passa o parâmetro de segmentação
+            segmentation_enabled=segmentation_enabled
         )
         # Executa a análise das fraturas
         analysis_results, processed_images, fractal_stats, segments_results = characterizer.analisar_fraturas()
@@ -184,7 +182,7 @@ def render_characterization_page():
                     analysis_results.to_excel(writer, index=False, sheet_name='Resultados_Detalhados_Fraturas')
                     stats.to_excel(writer, sheet_name='Estatisticas_Resumidas_Fraturas')
                     fractal_stats.to_excel(writer, index=False, sheet_name='Dimensao_Fractal_Fraturas')
-                processed_data = output.getvalue()  # Obtém os dados após fechar o writer
+                processed_data = output.getvalue()
 
                 # Botão para baixar todas as tabelas em formato Excel
                 st.sidebar.download_button(
@@ -341,11 +339,11 @@ def render_characterization_page():
         st.sidebar.markdown("---")
         if st.sidebar.button("Voltar para Detecção"):
             st.session_state.page = 'detection'
-            st.experimental_rerun()  # Reinicia a aplicação para carregar a página de detecção
+            st.rerun()  # Reinicia a aplicação para carregar a página de detecção
         if st.sidebar.button("Voltar para Processamento"):
             st.session_state.page = 'preprocessing'
-            st.experimental_rerun()  # Reinicia a aplicação para carregar a página de pré-processamento
+            st.rerun()  # Reinicia a aplicação para carregar a página de pré-processamento
         if st.sidebar.button("Sair"):
             st.session_state.clear()  # Limpa o estado da sessão
             st.session_state.page = 'home'
-            st.experimental_rerun()  # Reinicia a aplicação para carregar a página inicial
+            st.rerun()  # Reinicia a aplicação para carregar a página inicial

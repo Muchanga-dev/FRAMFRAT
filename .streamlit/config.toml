@@ -1,0 +1,11 @@
+[theme]
+primaryColor = "#E63946"               # Vermelho escuro para uma aparência elegante
+backgroundColor = "#2A2D3E"            # Cinza profundo, mais neutro e suave aos olhos
+secondaryBackgroundColor = "#4A4E8D"   # Púrpura mais escuro para contraste sutil
+textColor = "#E0E0E0"                  # Cinza claro para suavizar o contraste
+font = "sans serif"                    
+
+[server]
+maxUploadSize = 200
+
+

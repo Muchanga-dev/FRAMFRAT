@@ -1,15 +1,9 @@
-# -*- coding: utf-8 -*-
-"""
-Created on Mon Mar 27 16:34:13 2023
-
-@author: Armando Muchanga
-"""
 import streamlit as st
 import pathlib
 import logging
 import shutil
 from bs4 import BeautifulSoup
-#import streamlit.components.v1 as components
+
 
 #Conficuração da Página
 def Conf_pagina(icon):
@@ -48,11 +42,11 @@ def modify_tag_content(tag_name, new_content):
     logging.info(f'editing {index_path}')
     soup = BeautifulSoup(index_path.read_text(), features="html.parser")
     
-    target_tag = soup.find(tag_name)  # find the target tag
+    target_tag = soup.find(tag_name) 
 
-    if target_tag:  # if target tag exists
-        target_tag.string = new_content  # modify the tag content
-    else:  # if target tag doesn't exist, create a new one
+    if target_tag:  
+        target_tag.string = new_content  
+    else:  
         target_tag = soup.new_tag(tag_name)
         target_tag.string = new_content
         try:
@@ -64,10 +58,10 @@ def modify_tag_content(tag_name, new_content):
             print(f"Error when trying to append {tag_name} tag: {e}")
             return
 
-    # Save the changes
+   
     bck_index = index_path.with_suffix('.bck')
     if not bck_index.exists():
-        shutil.copy(index_path, bck_index)  # keep a backup
+        shutil.copy(index_path, bck_index)
     index_path.write_text(str(soup))
 
    
@@ -77,5 +71,3 @@ def configure_app(path):
     Conf_pagina(path)
     modify_tag_content('title', 'FRAMFRAT')
     modify_tag_content('noscript', 'FRAMFRAT')
-
-#Metadados de Pesquisa da Página

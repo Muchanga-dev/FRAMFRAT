@@ -12,7 +12,7 @@ import matplotlib.cm as cm
 from scipy.ndimage import convolve
 import math
 from skimage import measure, color
-import networkx as nx  # Importado para manipulação de grafos
+import networkx as nx
 
 
 class ImageProcessorBackend:
@@ -444,7 +444,7 @@ class AdvancedSegmentation:
         thickness = 1
 
         for idx, segment in enumerate(self.segments, start=1):
-            # Cor azul escuro
+            
             color = (139, 0, 0)  # Azul escuro em BGR
 
             # Desenhar o segmento
@@ -494,6 +494,7 @@ class FractureCharacterizer:
         self.fracture_labels = []
         self.branches_info = {}
         self.segments_info = []  # Lista para armazenar informações dos segmentos
+
         # Instanciação do ImageProcessorBackend
         self.image_processor = ImageProcessorBackend(self.image_real)
 
@@ -624,7 +625,7 @@ class FractureCharacterizer:
         dados_fraturas = []
         height, width = self.detection_image.shape
         if height == 0 or width == 0:
-            # Não é possível usar Streamlit aqui, então retornamos None
+
             return None, None, None, None
 
         # Cálculo do tamanho do pixel em mm
@@ -634,7 +635,7 @@ class FractureCharacterizer:
             return None, None, None, None
 
         # Cria imagem de fundo preto para desenhar os esqueletos
-        imagem_esqueleto = np.zeros((height, width, 3), dtype=np.uint8)  # Fundo preto
+        imagem_esqueleto = np.zeros((height, width, 3), dtype=np.uint8)
 
         total_fracture_area_mm2 = 0
 
@@ -705,7 +706,7 @@ class FractureCharacterizer:
             # Adiciona dados da fratura, incluindo a cor
             dados_fraturas.append({
                 "ID_Fratura": f"F_{prop.label}",
-                "ID_Segmento": "",  # Inicialmente vazio para fraturas originais
+                "ID_Segmento": "",  # Inicialmente vazio para fraturas principais
                 "Comprimento (mm)": f"{comprimento_mm:.2f}",
                 "Abertura Mínima (mm)": f"{abertura_min_mm:.4f}",
                 "Abertura Média (mm)": f"{abertura_media_mm:.4f}",
@@ -735,7 +736,7 @@ class FractureCharacterizer:
                 self.segments_info.extend(segments_metrics)
 
                 # Atualiza a imagem com os segmentos identificados
-                imagem_esqueleto = segmenter.visualize_segments(imagem_esqueleto) #, segments_metrics)
+                imagem_esqueleto = segmenter.visualize_segments(imagem_esqueleto)
 
                 # Adiciona os dados dos segmentos à tabela de resultados
                 for segment in segments_metrics:
@@ -774,7 +775,7 @@ class FractureCharacterizer:
             "Abertura Std (mm)": object,
             "Abertura IC Lower (mm)": object,
             "Abertura IC Upper (mm)": object,
-            "Orientação (graus)": object,  # Incluído para segmentos
+            "Orientação (graus)": object, 
             "Área da Fratura (mm²)": object,
             "Porosidade": object,
             "Permeabilidade (D)": object,
@@ -790,7 +791,7 @@ class FractureCharacterizer:
             "Abertura Std (mm)", 
             "Abertura IC Lower (mm)", 
             "Abertura IC Upper (mm)", 
-            "Orientação (graus)",  # Agora padronizado
+            "Orientação (graus)", 
             "Permeabilidade (D)", 
             "Porosidade"
         ]
@@ -829,7 +830,7 @@ class FractureCharacterizer:
         }
 
 
-        # **Criação da Imagem com IDs Sobrepostos**
+        # Criação da Imagem com IDs Sobrepostos
         # Inicializa a imagem_com_numero como uma cópia da overlay_image para manter as fraturas coloridas
         imagem_com_numero = self.processed_images["overlay_image"].copy()
 
@@ -868,12 +869,12 @@ class FractureCharacterizer:
                     cY = int(M["m01"] / M["m00"])
                     # Desenhar o ID na posição central com a cor correspondente
                     text = segmento_id if segmento_id else fratura_id
-                    color_str = row["Color"] if row["Color"] != "N/A" else "255, 0, 0"  # Vermelho padrão para segmentos
+                    color_str = row["Color"] if row["Color"] != "N/A" else "255, 0, 0" 
                     try:
                         # Converter a string de cor para tupla RGB
                         color = tuple(map(int, color_str.split(',')))
                     except:
-                        color = (255, 0, 0)  # Vermelho padrão caso falhe a conversão
+                        color = (255, 0, 0)  
                     draw.text((cX, cY), text, fill=color, font=fonte)
 
         # Converter de volta para NumPy array
