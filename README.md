@@ -4,13 +4,21 @@ FRAMFRAT é uma ferramenta avançada para detecção e caracterização de fratu
 
 ![FRAMFRAT](resultado/image/apresetacao/app_homo.png)
 
-
 ## Destaques
 
 - **Detecção Automática:** Identificação e esqueleto das fraturas em imagens digitais.
+
+![FRAMFRAT](resultado/image/output/aplicacao_2.png)
+
 - **Análise Geométrica Avançada:** Cálculo de abertura, comprimento, porosidade, conectividade e permeabilidade.
-- **Dimensão Fractal:** Ferramenta integrada para determinar a complexidade fractal das fraturas.
+
+![FRAMFRAT](resultado/image/output/aplicacao_6.png)
+
 - **Visualização Interativa:** Diagramas de orientação, estereogramas e gráficos estatísticos.
+
+![FRAMFRAT](resultado/image/output/aplicacao_9.png)
+
+- **Dimensão Fractal:** Ferramenta integrada para determinar a complexidade fractal das fraturas.
 - **Exportação de Dados:** Resultados prontos para análise em formatos como CSV e Excel.
 
 ## Pré-Requisitos
